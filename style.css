@@ -1,0 +1,72 @@
+ body {
+    background: #1e1e1e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 10px;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  .calculator {
+    background: #2a2a2a;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+  }
+  .screen {
+    width: 100%;
+    padding: 15px;
+    background: #000;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    text-align: right;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+  }
+  .main-grid {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 8px;
+  }
+  .numbers {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+  }
+  .operators {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+  button {
+    padding: 14px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    background: #3c3c3c;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  button:hover { background: #555; }
+  .clear { background: #ff4b4b; }
+  .clear:hover { background: #ff6b6b; }
+  .toggle-scientific { background: #4b8bff; }
+  .toggle-scientific:hover { background: #6ba8ff; }
+  .scientific {
+    margin-top: 10px;
+    display: none;
+    grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+    gap: 8px;
+  }
+  .scientific.active { display: grid; }
+  @media (max-width: 500px) {
+    .screen { font-size: 1.5rem; padding: 10px; }
+    button { padding: 12px; font-size: 0.9rem; }
+  }

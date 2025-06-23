@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Scientific Calculator</title>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="images/calculatorImage.png" type="image/png">
+
+</head>
+<body>
+
+<div class="calculator">
+  <input id="screen" class="screen" type="text" disabled placeholder="0">
+
+  <div class="main-grid">
+    <div class="numbers">
+      <button onclick="press('7')">7</button>
+      <button onclick="press('8')">8</button>
+      <button onclick="press('9')">9</button>
+      <button onclick="press('4')">4</button>
+      <button onclick="press('5')">5</button>
+      <button onclick="press('6')">6</button>
+      <button onclick="press('1')">1</button>
+      <button onclick="press('2')">2</button>
+      <button onclick="press('3')">3</button>
+      <button onclick="press('0')">0</button>
+      <button onclick="press('.')">.</button>
+      <button onclick="calculate()">=</button>
+    </div>
+    <div class="operators">
+      <button onclick="press('/')">÷</button>
+      <button onclick="press('*')">×</button>
+      <button onclick="press('-')">–</button>
+      <button onclick="press('+')">+</button>
+      <button class="clear" onclick="clearScreen()">C</button>
+      <button class="toggle-scientific" title="Scientific Mode" onclick="toggleScientific()">Sci</button>
+    </div>
+  </div>
+
+  <div id="scientific" class="scientific">
+    <button onclick="press('(')">(</button>
+    <button onclick="press(')')">)</button>
+    <button onclick="press('Math.PI')">π</button>
+    <button onclick="press('Math.E')">e</button>
+    <button onclick="press('1/')">1/x</button>
+    <button onclick="press('Math.sqrt(')">√</button>
+    <button onclick="press('Math.cbrt(')">∛</button>
+    <button onclick="press('**2')">x²</button>
+    <button onclick="press('**3')">x³</button>
+    <button onclick="press('**')">xʸ</button>
+    <button onclick="press('Math.sin(')">sin(</button>
+    <button onclick="press('Math.cos(')">cos(</button>
+    <button onclick="press('Math.tan(')">tan(</button>
+    <button onclick="press('Math.log(')">ln(</button>
+    <button onclick="press('Math.log10(')">log(</button>
+    <button onclick="press('Math.exp(')">eˣ</button>
+    <button onclick="press('10**(')">10ˣ</button>
+    <button onclick="press('-')">±</button>
+    <button onclick="press('!')">n!</button>
+    <button onclick="press(',')">,</button>
+  </div>
+</div>
+
+<script src="script..js"></script>
+
+</body>
+</html>
